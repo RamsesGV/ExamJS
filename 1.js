@@ -172,4 +172,57 @@ const  SumaPregunta = () =>  {
     console.log(respuesta)
 }
 
+/*
+¿Qué es un array?
 
+es un conjunto de datos dentro de una cajita, puede haber numeros string objetos incluso otros arrays. muy utiles
+¿Qué es un objeto?
+
+le damos vida a algo dandole propiedades, ayuda a realizar alguna lista muy avanzada o en la realizacion de alguna tarea que determine la accion de dicho objeto
+¿Cuándo es mejor usar objetos o arrays?
+
+Objetos:
+Los objetos son útiles para almacenar datos estructurados y organizados en pares clave-valor, donde la clave es una cadena que identifica de manera única el valor correspondiente.
+Los objetos son adecuados para trabajar con datos no numéricos y para realizar búsquedas rápidas y eficientes en grandes conjuntos de datos.
+Los objetos son útiles cuando se necesita añadir o eliminar dinámicamente propiedades o métodos al objeto en tiempo de ejecución.
+Los objetos también son útiles para modelar entidades de la vida real como usuarios, productos, pedidos, etc.
+Arrays:
+Los arrays son útiles para almacenar colecciones ordenadas de datos, especialmente datos numéricos o similares.
+Los arrays son adecuados para realizar operaciones matemáticas, como sumas y promedios, en grandes conjuntos de datos.
+Los arrays son útiles para iterar y procesar elementos en secuencia, ya que ofrecen métodos de iteración y ordenación integrados.
+Los arrays son también útiles para representar matrices, filas y columnas de datos en una tabla, y para crear listas de elementos.
+En resumen, el uso de objetos o arrays dependerá del tipo de datos que estés manejando y de la forma en que necesites acceder y manipularlos en tu programa.
+
+¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+claro que si
+
+
+*/
+let array = [3,4,5,6,7,8,9,9]
+const primerElemento = (a) => console.log(a[0])
+
+
+
+let array2 = [3,4,5,6,7,8,9,9,10]
+
+const todosLosElementos = (a) => { 
+    array2.forEach(element => {
+        console.log(element)
+    });
+}
+
+let objetos = { 
+    pais:'colombia',
+    color:'negro',
+    edad:'200'
+}
+
+const elementosObjeto = () => {
+    for (let key in objetos) {
+       console.log(objetos[key])
+        }
+    }
+
+
+   
