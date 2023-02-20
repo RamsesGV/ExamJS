@@ -119,7 +119,17 @@ const tipodesuscripcion  =  {
 
 }
 
-tipodesuscripcion.hasOwnProperty('basic') ? console.log('puedes tomar casi todos 1 mes'): console.log('tu suscripcion no fue reconocida')
+const mensajeObj = (suscripcion) =>  { 
+    if(tipodesuscripcion[suscripcion]) { 
+     console.log(tipodesuscripcion[suscripcion])
+     return;
+    }
+    console.warn('no existe ese tipo de suscripcion')
+}
+
+
+
+
 
 /* 
 
@@ -154,7 +164,7 @@ for (let i = 10; i >= 2; i--) {
 */
 
 
-
+let = i=0
 while (i<5) { 
     console.log('el valor de i es ' + i)
     i++
